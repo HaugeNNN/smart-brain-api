@@ -10,7 +10,7 @@ const app = new Clarifai.App({
         res.json(data);
       })
       .catch(err => res.status(400).json('unable to work with API'))
-  }
+  };
 
 const handleImage = (req,res, db) => {
     const { id } = req.body
@@ -21,7 +21,7 @@ const handleImage = (req,res, db) => {
         res.json(entries[0].entries);
     })
    .catch(err => res.status(400).json('unable to get entries'))
-}
+};
 
 module.exports = {
     handleImage,

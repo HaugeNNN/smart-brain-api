@@ -42,6 +42,3 @@ app.listen(PORT, ()=> {
 })
 console.log(PORT)
 
-//app.get('/',(req, res)=> {
- //   res.send('success');
-//})
